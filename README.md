@@ -34,7 +34,6 @@ Web App: Streamlit
 🌐 Live Demo
 
 👉 https://newscred.streamlit.app
- (update if needed)
 
 ⚠️ Disclaimer
 
