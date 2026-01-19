@@ -1,4 +1,4 @@
-# AI-powered-News-Credibility-Assistant-for-Students
+# AI powered News Credibility Assistant for Students
 📰 AI-Powered News Credibility Assistant
 
 An AI-based web application that helps users-especially students-critically evaluate online news by analyzing credibility patterns, detecting bias, and generating concise summaries using Machine Learning and NLP.
