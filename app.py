@@ -309,7 +309,21 @@ def analyze(text):
 def summarize(text):
     if len(text.split()) < 50:
         return "Text too short to summarize."
-    return summarizer(text[:1024], max_length=80, min_length=30, do_sample=False)[0]["summary_text"]
+
+    result = summarizer(
+        text[:1024],
+        max_length=80,
+        min_length=30,
+        do_sample=False
+    )
+
+    return result[0]["generated_text"]
+
+
+#def summarize(text):
+#    if len(text.split()) < 50:
+ #       return "Text too short to summarize."
+   # return summarizer(text[:1024], max_length=80, min_length=30, do_sample=False)[0]["summary_text"]
 
 # ------------------------------
 # SESSION HISTORY
@@ -420,5 +434,6 @@ with st.expander("⚙️ Technical Highlights"):
 # FOOTER
 # ------------------------------
 st.markdown('<div class="footer">⚠️ Educational AI assistant. Encourages critical thinking.</div>', unsafe_allow_html=True)
+
 
 
