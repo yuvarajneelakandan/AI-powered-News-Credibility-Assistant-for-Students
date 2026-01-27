@@ -252,7 +252,7 @@ model, vectorizer = load_ml()
 if "summarizer" not in st.session_state:
     with st.spinner("🔄 Loading AI summarizer..."):
         st.session_state.summarizer = pipeline(
-            "summarization",
+            "text2text-generation",
             model="facebook/bart-large-cnn",
             device=-1
         )
@@ -434,6 +434,7 @@ with st.expander("⚙️ Technical Highlights"):
 # FOOTER
 # ------------------------------
 st.markdown('<div class="footer">⚠️ Educational AI assistant. Encourages critical thinking.</div>', unsafe_allow_html=True)
+
 
 
 
